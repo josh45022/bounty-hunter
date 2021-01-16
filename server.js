@@ -8,7 +8,7 @@ const BountyModel = require("./models/bountyData.js")
 const port =  process.env.PORT || 7000
 const dotenv = require("dotenv").config()
 const path = require('path')
-
+process.env.MONGODB_URI = "mongodb+srv://databasepassword:databasepassword@cluster0.gmbbj.mongodb.net/bountyhunterdb?retryWrites=true&w=majority"
 
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/bountyhunterdb",
