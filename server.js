@@ -7,6 +7,7 @@ app.use(morgan("dev"))
 const BountyModel = require("./models/bountyData.js")
 const port =  process.env.PORT || 7000
 const dotenv = require("dotenv").config()
+const path = require('path')
 
 
 
